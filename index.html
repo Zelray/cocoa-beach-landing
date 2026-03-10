@@ -21,10 +21,20 @@
     html { scroll-behavior: smooth; }
     body { font-family: 'Poppins', sans-serif; color: var(--text-dark); background: var(--white); overflow-x: hidden; }
 
+    /* DEMO BAR */
+    .demo-bar {
+      position: fixed; top: 0; left: 0; width: 100%; z-index: 1001;
+      background: #FDB813; color: #004A7F;
+      text-align: center; padding: 8px 16px;
+      font-family: 'Poppins', sans-serif; font-size: 0.82rem; font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
     /* NAVBAR */
     nav {
       position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
       background: rgba(0,74,127,0.97); backdrop-filter: blur(12px);
+      top: 37px;
       padding: 8px 40px; display: flex; align-items: center; justify-content: space-between;
       box-shadow: 0 2px 20px rgba(0,0,0,0.18);
     }
@@ -192,6 +202,9 @@
   </style>
 </head>
 <body>
+
+  <!-- DEMO BAR -->
+  <div class="demo-bar">&#9888;&nbsp; Michael George is not a real estate agent. This is just a demo.</div>
 
   <!-- NAVBAR -->
   <nav>
